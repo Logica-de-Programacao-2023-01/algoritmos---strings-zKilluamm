@@ -12,6 +12,7 @@ func main() {
 	scanner := bufio.NewScanner(os.Stdin)
 	scanner.Scan()
 	input := scanner.Text()
-	result := strings.ReplaceAll(input, " ", "")
-	fmt.Printf("A string sem espaços em branco é: %s\n", result)
+	words := strings.Fields(input)
+	count := len(words)
+	fmt.Printf("A string digitada contém %d palavra(s).\n", count)
 }

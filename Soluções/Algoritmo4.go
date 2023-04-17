@@ -14,9 +14,9 @@ func main() {
 	fmt.Scanln(&string2)
 
 	if strings.Compare(string1, string2) == 0 {
-		fmt.Println("As strings são iguais: ")
+		fmt.Println("As strings são iguais. ")
 	} else {
-		fmt.Println("As strings são diferentes: ")
+		fmt.Println("As strings são diferentes. ")
 	}
 
 }
